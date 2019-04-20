@@ -88,7 +88,7 @@ def main():
         warnings.simplefilter('ignore')
 
     fps, sound = wavfile.read(args.wav.name)
-    # sound = sound[:,0]
+    sound = sound[:,0]
 
     tones = range(-25, 25)
     sys.stdout.write('Transponding sound file... ')
